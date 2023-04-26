@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GallaryAccessDemo</string>
+    <string name="file_name">File Name :- </string>
+    <string name="file_date">File Date :- </string>
+    <string name="file_duration">File Duration :- </string>
+    <string name="file_size">File Size :- </string>
+    <string name="Ok">OK</string>
+</resources>

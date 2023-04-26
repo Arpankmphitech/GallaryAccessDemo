@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.VideoPlayerActivity">
+
+    <!--    <VideoView-->
+    <!--        android:id="@+id/video_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="center" />-->
+
+
+    <FrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <com.universalvideoview.UniversalVideoView
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+
+
+        <com.universalvideoview.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:uvv_scalable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/secMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/secPlus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressTint="@color/colorPrimary" />
+
+
+</FrameLayout>
